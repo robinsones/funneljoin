@@ -7,6 +7,7 @@
 summarize_prop_tests(
   x,
   alternative_name = alternative.name,
+  base_level = "control",
   ...,
   ungroup = TRUE
 )
@@ -15,6 +16,8 @@ summarize_prop_tests(
 \item{x}{a data.frame with columns nb_conversions and nb_users}
 
 \item{alternative_name}{the name of the column indicating the experiment group}
+
+\item{base_level}{the name of the control experiment group}
 
 \item{...}{any additional arguments}
 
