@@ -8,25 +8,36 @@
 
 <title>Join tables based on one event happening after another — after_join • funneljoin</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
 <!-- headroom.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -44,7 +55,7 @@ the two to be joined.
 Supports all types of dplyr joins (inner, left, anti, etc.) and requires a
 type argument to specify which observations in a funnel get kept
 (see details for supported types)." />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="/logo.png" />
 
 
 
@@ -62,7 +73,7 @@ type argument to specify which observations in a funnel get kept
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -76,7 +87,7 @@ type argument to specify which observations in a funnel get kept
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">funneljoin</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.9000</span>
       </span>
     </div>
 
@@ -129,27 +140,90 @@ type argument to specify which observations in a funnel get kept
 (see details for supported types).</p>
     </div>
 
-    <pre class="usage"><span class='fu'>after_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='kw'>mode</span> <span class='kw'>=</span> <span class='st'>"inner"</span>,
-  <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"first-first"</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))
+    <pre class="usage"><span class='fu'>after_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='kw'>mode</span> <span class='kw'>=</span> <span class='st'>"inner"</span>,
+  <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"first-first"</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)
 
-<span class='fu'>after_inner_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='no'>type</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))
+<span class='fu'>after_inner_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='no'>type</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)
 
-<span class='fu'>after_left_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='no'>type</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))
+<span class='fu'>after_left_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='no'>type</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)
 
-<span class='fu'>after_right_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='no'>type</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))
+<span class='fu'>after_right_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='no'>type</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)
 
-<span class='fu'>after_full_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='no'>type</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))
+<span class='fu'>after_full_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='no'>type</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)
 
-<span class='fu'>after_anti_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='no'>type</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))
+<span class='fu'>after_anti_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='no'>type</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)
 
-<span class='fu'>after_semi_join</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='no'>by_time</span>, <span class='no'>by_user</span>, <span class='no'>type</span>, <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>))</pre>
+<span class='fu'>after_semi_join</span>(
+  <span class='no'>x</span>,
+  <span class='no'>y</span>,
+  <span class='no'>by_time</span>,
+  <span class='no'>by_user</span>,
+  <span class='no'>type</span>,
+  <span class='kw'>max_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>min_gap</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>gap_col</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>suffix</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>".x"</span>, <span class='st'>".y"</span>)
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -211,7 +285,7 @@ Should be a character vector of length 2.</p></td>
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p><code>type</code> can be any combination of <code>first</code>, <code>last</code>, <code>any</code>, <code>lastbefore</code>, <code>firstwithin</code> with <code>first</code>, <code>last</code>, <code>any</code>,  <code>firstafter</code>. Some common ones you may use include:</p><dl class='dl-horizontal'>
+    <p><code>type</code> can be any combination of <code>first</code>, <code>last</code>, <code>any</code>, <code>lastbefore</code>, <code>firstwithin</code> with <code>first</code>, <code>last</code>, <code>any</code>,  <code>firstafter</code>. Some common ones you may use include:</p><dl'>
   <dt>first-first</dt><dd><p>Take the earliest x and y for each user <b>before</b> joining. For example, you want the first time someone entered an experiment, followed by the first time someone <b>ever</b> registered. If they registered, entered the experiment, and registered again, you do not want to include that person.</p></dd>
   <dt>first-firstafter</dt><dd><p>Take the first x, then the first y after that. For example, you want when someone first entered an experiment and the first course they started afterwards. You don't care if they started courses before entering the experiment.</p></dd>
   <dt>lastbefore-firstafter</dt><dd><p>First x that's followed by a y before the next x. For example, in last click paid ad attribution, you want the last time someone clicked an ad before the first subscription they did afterward.</p></dd>
@@ -285,14 +359,10 @@ Should be a character vector of length 2.</p></td>
 #&gt; </span><span style='color: #555555;'>4</span><span>       5 2018-07-12</div><div class='input'>
 </div></span></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-      <li><a href="#details">Details</a></li>
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
 
@@ -303,7 +373,7 @@ Should be a character vector of length 2.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

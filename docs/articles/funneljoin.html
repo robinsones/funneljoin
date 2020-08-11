@@ -6,19 +6,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Introduction to funneljoin • funneljoin</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to funneljoin">
-<meta property="og:description" content="">
-<meta name="twitter:card" content="summary">
+<meta property="og:description" content="funneljoin">
+<meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body data-spy="scroll" data-target="#toc">
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,7 +38,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">funneljoin</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.9000</span>
       </span>
     </div>
 
@@ -66,10 +73,10 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Introduction to funneljoin</h1>
+      <h1 data-toc-skip>Introduction to funneljoin</h1>
                         <h4 class="author">Emily Robinson</h4>
             
-            <h4 class="date">2019-10-15</h4>
+            <h4 class="date">2020-08-11</h4>
       
       
       <div class="hidden name"><code>funneljoin.Rmd</code></div>
@@ -101,9 +108,9 @@
 <a href="#after_join-types" class="anchor"></a>after_join types</h2>
 <p>Funneljoins can be any combination of <code>first</code>, <code>last</code>, <code>any</code>, and <code>lastbefore</code> with <code>first</code>, <code>last</code>, <code>any</code>, and <code>firstafter</code>.</p>
 <p>Let’s take an example. We’ll use two tables, one of landings and one of registrations, that come with the package. Each has a <code>user_id</code> and <code>timestamp</code> column.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(dplyr)
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(funneljoin)</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">landed
+<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dplyr</span>)
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">funneljoin</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="no">landed</span>
 <span class="co">#&gt; # A tibble: 9 x 2</span>
 <span class="co">#&gt;   user_id timestamp </span>
 <span class="co">#&gt;     &lt;dbl&gt; &lt;date&gt;    </span>
@@ -115,8 +122,8 @@
 <span class="co">#&gt; 6       5 2018-07-10</span>
 <span class="co">#&gt; 7       5 2018-07-12</span>
 <span class="co">#&gt; 8       6 2018-07-07</span>
-<span class="co">#&gt; 9       6 2018-07-08</span></code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">registered
+<span class="co">#&gt; 9       6 2018-07-08</span></pre></body></html></div>
+<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="no">registered</span>
 <span class="co">#&gt; # A tibble: 8 x 2</span>
 <span class="co">#&gt;   user_id timestamp </span>
 <span class="co">#&gt;     &lt;dbl&gt; &lt;date&gt;    </span>
@@ -127,20 +134,20 @@
 <span class="co">#&gt; 5       5 2018-07-11</span>
 <span class="co">#&gt; 6       6 2018-07-10</span>
 <span class="co">#&gt; 7       6 2018-07-11</span>
-<span class="co">#&gt; 8       7 2018-07-07</span></code></pre></div>
+<span class="co">#&gt; 8       7 2018-07-07</span></pre></body></html></div>
 <p>Let’s say we wanted to get only the first time people landed and the first time they registered, <em>if</em> it was after their first landing. We would use a <code>first-first inner</code> join.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">landed <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/after_join.html">after_inner_join</a></span>(registered, 
-                   <span class="dt">by_user =</span> <span class="st">"user_id"</span>,
-                   <span class="dt">by_time =</span> <span class="st">"timestamp"</span>,
-                   <span class="dt">type =</span> <span class="st">"first-first"</span>)
+<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">landed</span> <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/after_join.html">after_inner_join</a></span>(<span class="no">registered</span>,
+                   <span class="kw">by_user</span> <span class="kw">=</span> <span class="st">"user_id"</span>,
+                   <span class="kw">by_time</span> <span class="kw">=</span> <span class="st">"timestamp"</span>,
+                   <span class="kw">type</span> <span class="kw">=</span> <span class="st">"first-first"</span>)
 <span class="co">#&gt; # A tibble: 4 x 3</span>
 <span class="co">#&gt;   user_id timestamp.x timestamp.y</span>
 <span class="co">#&gt;     &lt;dbl&gt; &lt;date&gt;      &lt;date&gt;     </span>
 <span class="co">#&gt; 1       1 2018-07-01  2018-07-02 </span>
 <span class="co">#&gt; 2       3 2018-07-02  2018-07-02 </span>
 <span class="co">#&gt; 3       6 2018-07-07  2018-07-10 </span>
-<span class="co">#&gt; 4       5 2018-07-10  2018-07-11</span></code></pre></div>
+<span class="co">#&gt; 4       5 2018-07-10  2018-07-11</span></pre></body></html></div>
 <p>We now have a dataset of four rows. Notice a few things:</p>
 <ul>
 <li>
@@ -155,13 +162,13 @@
 <a href="#max-gap" class="anchor"></a>Max gap</h2>
 <p>What if instead we wanted all landing-registration pairs that happened within a 4-day window? We now add the <code>max_gap</code> argument. This takes either a number, which is the number of seconds, or a difftime object. Instead of calculating the number of seconds in 4 days, we’ll just make a difftime object. Because we want any pair, not just the pairs of the first landings and registrations, we change the type to <code>any-any</code>.</p>
 <p>We’ll also add <code>gap_col = TRUE</code> to return a column, <code>.gap</code>, which is the gap in seconds between the events.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">landed <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/after_join.html">after_inner_join</a></span>(registered, 
-                   <span class="dt">by_user =</span> <span class="st">"user_id"</span>,
-                   <span class="dt">by_time =</span> <span class="st">"timestamp"</span>,
-                   <span class="dt">type =</span> <span class="st">"any-any"</span>, 
-                   <span class="dt">max_gap =</span> <span class="kw"><a href="https://rdrr.io/r/base/difftime.html">as.difftime</a></span>(<span class="dv">4</span>, <span class="dt">units =</span> <span class="st">"days"</span>),
-                   <span class="dt">gap_col =</span> <span class="ot">TRUE</span>)
+<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">landed</span> <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/after_join.html">after_inner_join</a></span>(<span class="no">registered</span>,
+                   <span class="kw">by_user</span> <span class="kw">=</span> <span class="st">"user_id"</span>,
+                   <span class="kw">by_time</span> <span class="kw">=</span> <span class="st">"timestamp"</span>,
+                   <span class="kw">type</span> <span class="kw">=</span> <span class="st">"any-any"</span>,
+                   <span class="kw">max_gap</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/difftime.html">as.difftime</a></span>(<span class="fl">4</span>, <span class="kw">units</span> <span class="kw">=</span> <span class="st">"days"</span>),
+                   <span class="kw">gap_col</span> <span class="kw">=</span> <span class="fl">TRUE</span>)
 <span class="co">#&gt; # A tibble: 7 x 4</span>
 <span class="co">#&gt;   user_id timestamp.x   .gap timestamp.y</span>
 <span class="co">#&gt;     &lt;dbl&gt; &lt;date&gt;       &lt;dbl&gt; &lt;date&gt;     </span>
@@ -171,7 +178,7 @@
 <span class="co">#&gt; 4       5 2018-07-10   86400 2018-07-11 </span>
 <span class="co">#&gt; 5       6 2018-07-07  259200 2018-07-10 </span>
 <span class="co">#&gt; 6       6 2018-07-08  172800 2018-07-10 </span>
-<span class="co">#&gt; 7       6 2018-07-08  259200 2018-07-11</span></code></pre></div>
+<span class="co">#&gt; 7       6 2018-07-08  259200 2018-07-11</span></pre></body></html></div>
 <p>We now have a dataset of 7 rows. Notice a few things:</p>
 <ul>
 <li>As always, <code>timestamp.y</code> is greater than or equal to <code>timestamp.x</code>.</li>
@@ -184,37 +191,37 @@
 <a href="#other-types-of-joins" class="anchor"></a>Other types of joins</h2>
 <p>Left joins are very handy when you want to know what percentage of people who did X did Y afterward. For example, we may have an experiment where we want to know “what percentage of people registered after entering the experiment?”</p>
 <p>In this case, we’d use a <code>first-firstafter</code> left join - we want to get a person’s first experiment start and then their first registration afterward, if they have one. Let’s add another column to our experiment starts table, which experiment variant someone was in.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">experiment_starts &lt;-<span class="st"> </span>tibble<span class="op">::</span><span class="kw"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
-  <span class="op">~</span>user_id, <span class="op">~</span>timestamp, <span class="op">~</span><span class="st"> </span>alternative.name,
-  <span class="dv">1</span>, <span class="st">"2018-07-01"</span>, <span class="st">"control"</span>,
-  <span class="dv">2</span>, <span class="st">"2018-07-01"</span>, <span class="st">"treatment"</span>,
-  <span class="dv">3</span>, <span class="st">"2018-07-02"</span>, <span class="st">"control"</span>,
-  <span class="dv">4</span>, <span class="st">"2018-07-01"</span>, <span class="st">"control"</span>,
-  <span class="dv">4</span>, <span class="st">"2018-07-04"</span>, <span class="st">"control"</span>,
-  <span class="dv">5</span>, <span class="st">"2018-07-10"</span>, <span class="st">"treatment"</span>,
-  <span class="dv">5</span>, <span class="st">"2018-07-12"</span>, <span class="st">"treatment"</span>,
-  <span class="dv">6</span>, <span class="st">"2018-07-07"</span>, <span class="st">"treatment"</span>,
-  <span class="dv">6</span>, <span class="st">"2018-07-08"</span>, <span class="st">"treatment"</span>
-) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="dt">timestamp =</span> <span class="kw"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(timestamp))
+<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="no">experiment_starts</span> <span class="kw">&lt;-</span> <span class="kw pkg">tibble</span><span class="kw ns">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
+  ~<span class="no">user_id</span>, ~<span class="no">timestamp</span>, ~ <span class="no">alternative.name</span>,
+  <span class="fl">1</span>, <span class="st">"2018-07-01"</span>, <span class="st">"control"</span>,
+  <span class="fl">2</span>, <span class="st">"2018-07-01"</span>, <span class="st">"treatment"</span>,
+  <span class="fl">3</span>, <span class="st">"2018-07-02"</span>, <span class="st">"control"</span>,
+  <span class="fl">4</span>, <span class="st">"2018-07-01"</span>, <span class="st">"control"</span>,
+  <span class="fl">4</span>, <span class="st">"2018-07-04"</span>, <span class="st">"control"</span>,
+  <span class="fl">5</span>, <span class="st">"2018-07-10"</span>, <span class="st">"treatment"</span>,
+  <span class="fl">5</span>, <span class="st">"2018-07-12"</span>, <span class="st">"treatment"</span>,
+  <span class="fl">6</span>, <span class="st">"2018-07-07"</span>, <span class="st">"treatment"</span>,
+  <span class="fl">6</span>, <span class="st">"2018-07-08"</span>, <span class="st">"treatment"</span>
+) <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">timestamp</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(<span class="no">timestamp</span>))
 
-experiment_registrations &lt;-<span class="st"> </span>tibble<span class="op">::</span><span class="kw"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
-  <span class="op">~</span>user_id, <span class="op">~</span>timestamp, 
-  <span class="dv">1</span>, <span class="st">"2018-07-02"</span>, 
-  <span class="dv">3</span>, <span class="st">"2018-07-02"</span>, 
-  <span class="dv">4</span>, <span class="st">"2018-06-10"</span>, 
-  <span class="dv">4</span>, <span class="st">"2018-07-02"</span>, 
-  <span class="dv">5</span>, <span class="st">"2018-07-11"</span>, 
-  <span class="dv">6</span>, <span class="st">"2018-07-10"</span>, 
-  <span class="dv">6</span>, <span class="st">"2018-07-11"</span>, 
-  <span class="dv">7</span>, <span class="st">"2018-07-07"</span>
-) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="dt">timestamp =</span> <span class="kw"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(timestamp))</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">experiment_starts <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/after_join.html">after_left_join</a></span>(experiment_registrations, 
-                   <span class="dt">by_user =</span> <span class="st">"user_id"</span>,
-                   <span class="dt">by_time =</span> <span class="st">"timestamp"</span>,
-                   <span class="dt">type =</span> <span class="st">"first-firstafter"</span>)
+<span class="no">experiment_registrations</span> <span class="kw">&lt;-</span> <span class="kw pkg">tibble</span><span class="kw ns">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
+  ~<span class="no">user_id</span>, ~<span class="no">timestamp</span>,
+  <span class="fl">1</span>, <span class="st">"2018-07-02"</span>,
+  <span class="fl">3</span>, <span class="st">"2018-07-02"</span>,
+  <span class="fl">4</span>, <span class="st">"2018-06-10"</span>,
+  <span class="fl">4</span>, <span class="st">"2018-07-02"</span>,
+  <span class="fl">5</span>, <span class="st">"2018-07-11"</span>,
+  <span class="fl">6</span>, <span class="st">"2018-07-10"</span>,
+  <span class="fl">6</span>, <span class="st">"2018-07-11"</span>,
+  <span class="fl">7</span>, <span class="st">"2018-07-07"</span>
+) <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">timestamp</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(<span class="no">timestamp</span>))</pre></body></html></div>
+<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="no">experiment_starts</span> <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/after_join.html">after_left_join</a></span>(<span class="no">experiment_registrations</span>,
+                   <span class="kw">by_user</span> <span class="kw">=</span> <span class="st">"user_id"</span>,
+                   <span class="kw">by_time</span> <span class="kw">=</span> <span class="st">"timestamp"</span>,
+                   <span class="kw">type</span> <span class="kw">=</span> <span class="st">"first-firstafter"</span>)
 <span class="co">#&gt; # A tibble: 6 x 4</span>
 <span class="co">#&gt;   user_id timestamp.x alternative.name timestamp.y</span>
 <span class="co">#&gt;     &lt;dbl&gt; &lt;date&gt;      &lt;chr&gt;            &lt;date&gt;     </span>
@@ -223,39 +230,39 @@ experiment_registrations &lt;-<span class="st"> </span>tibble<span class="op">::
 <span class="co">#&gt; 3       4 2018-07-01  control          2018-07-02 </span>
 <span class="co">#&gt; 4       3 2018-07-02  control          2018-07-02 </span>
 <span class="co">#&gt; 5       6 2018-07-07  treatment        2018-07-10 </span>
-<span class="co">#&gt; 6       5 2018-07-10  treatment        2018-07-11</span></code></pre></div>
+<span class="co">#&gt; 6       5 2018-07-10  treatment        2018-07-11</span></pre></body></html></div>
 <p>We now have an entry for each user in the experiment_starts table, which has the time of their first registration afterward or NA if they did not have a registration afterwards. Each user only appears once since it’s a <code>first-something</code> join.</p>
 <p>We can use funneljoin’s <code><a href="../reference/summarize_conversions.html">summarize_conversions()</a></code> function to get the number of starts and number of conversions (registrations) in each group - you just need to specify the column that indicates whether someone converted - if it’s NA or FALSE, it will be treated as FALSE, otherwise TRUE.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">experiment_starts <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/after_join.html">after_left_join</a></span>(experiment_registrations, 
-                   <span class="dt">by_user =</span> <span class="st">"user_id"</span>,
-                   <span class="dt">by_time =</span> <span class="st">"timestamp"</span>,
-                   <span class="dt">type =</span> <span class="st">"first-firstafter"</span>) <span class="op">%&gt;%</span><span class="st"> </span>
-<span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(alternative.name) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/summarize_conversions.html">summarize_conversions</a></span>(<span class="dt">converted =</span> timestamp.y)
+<div class="sourceCode" id="cb8"><html><body><pre class="r"><span class="no">experiment_starts</span> <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/after_join.html">after_left_join</a></span>(<span class="no">experiment_registrations</span>,
+                   <span class="kw">by_user</span> <span class="kw">=</span> <span class="st">"user_id"</span>,
+                   <span class="kw">by_time</span> <span class="kw">=</span> <span class="st">"timestamp"</span>,
+                   <span class="kw">type</span> <span class="kw">=</span> <span class="st">"first-firstafter"</span>) <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(<span class="no">alternative.name</span>) <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/summarize_conversions.html">summarize_conversions</a></span>(<span class="kw">converted</span> <span class="kw">=</span> <span class="no">timestamp.y</span>)
 <span class="co">#&gt; # A tibble: 2 x 4</span>
 <span class="co">#&gt;   alternative.name nb_users nb_conversions pct_converted</span>
 <span class="co">#&gt;   &lt;chr&gt;               &lt;int&gt;          &lt;int&gt;         &lt;dbl&gt;</span>
 <span class="co">#&gt; 1 control                 3              3         1    </span>
-<span class="co">#&gt; 2 treatment               3              2         0.667</span></code></pre></div>
+<span class="co">#&gt; 2 treatment               3              2         0.667</span></pre></body></html></div>
 <p><code>summarize_conversions</code> also works if we have multiple types of conversions, specified by a column.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">for_conversion &lt;-<span class="st"> </span>tibble<span class="op">::</span><span class="kw"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
-  <span class="op">~</span><span class="st">"experiment_group"</span>, <span class="op">~</span><span class="st">"first_event"</span>, <span class="op">~</span><span class="st">"last_event"</span>, <span class="op">~</span><span class="st">"type"</span>, 
-  <span class="st">"control"</span>, <span class="st">"2018-07-01"</span>, <span class="ot">NA</span>, <span class="st">"click"</span>,
-  <span class="st">"control"</span>, <span class="st">"2018-07-02"</span>, <span class="ot">NA</span>, <span class="st">"click"</span>,
+<div class="sourceCode" id="cb9"><html><body><pre class="r"><span class="no">for_conversion</span> <span class="kw">&lt;-</span> <span class="kw pkg">tibble</span><span class="kw ns">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
+  ~<span class="st">"experiment_group"</span>, ~<span class="st">"first_event"</span>, ~<span class="st">"last_event"</span>, ~<span class="st">"type"</span>,
+  <span class="st">"control"</span>, <span class="st">"2018-07-01"</span>, <span class="fl">NA</span>, <span class="st">"click"</span>,
+  <span class="st">"control"</span>, <span class="st">"2018-07-02"</span>, <span class="fl">NA</span>, <span class="st">"click"</span>,
   <span class="st">"control"</span>, <span class="st">"2018-07-03"</span>, <span class="st">"2018-07-05"</span>, <span class="st">"click"</span>,
   <span class="st">"treatment"</span>, <span class="st">"2018-07-01"</span>, <span class="st">"2018-07-05"</span>, <span class="st">"click"</span>,
   <span class="st">"treatment"</span>, <span class="st">"2018-07-01"</span>, <span class="st">"2018-07-05"</span>, <span class="st">"click"</span>,
-  <span class="st">"control"</span>, <span class="st">"2018-07-01"</span>, <span class="ot">NA</span>, <span class="st">"purchase"</span>,
-  <span class="st">"control"</span>, <span class="st">"2018-07-02"</span>, <span class="ot">NA</span>, <span class="st">"purchase"</span>,
-  <span class="st">"control"</span>, <span class="st">"2018-07-03"</span>, <span class="ot">NA</span>, <span class="st">"purchase"</span>,
-  <span class="st">"treatment"</span>, <span class="st">"2018-07-01"</span>, <span class="ot">NA</span>, <span class="st">"purchase"</span>,
+  <span class="st">"control"</span>, <span class="st">"2018-07-01"</span>, <span class="fl">NA</span>, <span class="st">"purchase"</span>,
+  <span class="st">"control"</span>, <span class="st">"2018-07-02"</span>, <span class="fl">NA</span>, <span class="st">"purchase"</span>,
+  <span class="st">"control"</span>, <span class="st">"2018-07-03"</span>, <span class="fl">NA</span>, <span class="st">"purchase"</span>,
+  <span class="st">"treatment"</span>, <span class="st">"2018-07-01"</span>, <span class="fl">NA</span>, <span class="st">"purchase"</span>,
   <span class="st">"treatment"</span>, <span class="st">"2018-07-01"</span>, <span class="st">"2018-07-05"</span>, <span class="st">"purchase"</span>
 )
 
-for_conversion <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(type, experiment_group) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/summarize_conversions.html">summarize_conversions</a></span>(<span class="dt">converted =</span> last_event)
+<span class="no">for_conversion</span> <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(<span class="no">type</span>, <span class="no">experiment_group</span>) <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/summarize_conversions.html">summarize_conversions</a></span>(<span class="kw">converted</span> <span class="kw">=</span> <span class="no">last_event</span>)
 <span class="co">#&gt; # A tibble: 4 x 5</span>
 <span class="co">#&gt; # Groups:   type [2]</span>
 <span class="co">#&gt;   type     experiment_group nb_users nb_conversions pct_converted</span>
@@ -263,7 +270,7 @@ for_conversion <span class="op">%&gt;%</span>
 <span class="co">#&gt; 1 click    control                 3              1         0.333</span>
 <span class="co">#&gt; 2 click    treatment               2              2         1    </span>
 <span class="co">#&gt; 3 purchase control                 3              0         0    </span>
-<span class="co">#&gt; 4 purchase treatment               2              1         0.5</span></code></pre></div>
+<span class="co">#&gt; 4 purchase treatment               2              1         0.5</span></pre></body></html></div>
 </div>
 <div id="summarize-prop-tests" class="section level2">
 <h2 class="hasAnchor">
@@ -283,39 +290,30 @@ for_conversion <span class="op">%&gt;%</span>
 <code>pct_change_low</code> and <code>pct_change_high</code>: the bayesian estimates for a 90% confidence interval.</li>
 </ul>
 <p>If you had a type column, it will also be in the output.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">tbl &lt;-<span class="st"> </span>tibble<span class="op">::</span><span class="kw"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
-  <span class="op">~</span><span class="st"> </span>experiment_group, <span class="op">~</span>nb_users, <span class="op">~</span>nb_conversions, <span class="op">~</span>type,
-  <span class="st">"control"</span>, <span class="dv">500</span>, <span class="dv">200</span>, <span class="st">"purchase"</span>,
-  <span class="st">"treatment"</span>, <span class="dv">500</span>, <span class="dv">100</span>, <span class="st">"purchase"</span>, 
-  <span class="st">"control"</span>, <span class="dv">500</span>, <span class="dv">360</span>, <span class="st">"click"</span>,
-  <span class="st">"treatment"</span>, <span class="dv">500</span>, <span class="dv">375</span>, <span class="st">"click"</span>
+<div class="sourceCode" id="cb10"><html><body><pre class="r"><span class="no">tbl</span> <span class="kw">&lt;-</span> <span class="kw pkg">tibble</span><span class="kw ns">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tribble.html">tribble</a></span>(
+  ~ <span class="no">experiment_group</span>, ~<span class="no">nb_users</span>, ~<span class="no">nb_conversions</span>, ~<span class="no">type</span>,
+  <span class="st">"control"</span>, <span class="fl">500</span>, <span class="fl">200</span>, <span class="st">"purchase"</span>,
+  <span class="st">"treatment"</span>, <span class="fl">500</span>, <span class="fl">100</span>, <span class="st">"purchase"</span>,
+  <span class="st">"control"</span>, <span class="fl">500</span>, <span class="fl">360</span>, <span class="st">"click"</span>,
+  <span class="st">"treatment"</span>, <span class="fl">500</span>, <span class="fl">375</span>, <span class="st">"click"</span>
 )
 
-tbl <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(type) <span class="op">%&gt;%</span>
-<span class="st">  </span><span class="kw"><a href="../reference/summarize_prop_tests.html">summarize_prop_tests</a></span>(<span class="dt">alternative_name =</span> experiment_group)
+<span class="no">tbl</span> <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(<span class="no">type</span>) <span class="kw">%&gt;%</span>
+  <span class="fu"><a href="../reference/summarize_prop_tests.html">summarize_prop_tests</a></span>(<span class="kw">alternative_name</span> <span class="kw">=</span> <span class="no">experiment_group</span>)
 <span class="co">#&gt; # A tibble: 2 x 7</span>
-<span class="co">#&gt;   type  control treatment  p_value pct_change pct_change_low</span>
-<span class="co">#&gt;   &lt;chr&gt;   &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;          &lt;dbl&gt;</span>
-<span class="co">#&gt; 1 click    0.72      0.75 3.16e- 1     0.0417        -0.0248</span>
-<span class="co">#&gt; 2 purc…    0.4       0.2  8.39e-12    -0.5           -0.621 </span>
-<span class="co">#&gt; # … with 1 more variable: pct_change_high &lt;dbl&gt;</span></code></pre></div>
+<span class="co">#&gt;   type     control treatment  p_value pct_change pct_change_low pct_change_high</span>
+<span class="co">#&gt;   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;          &lt;dbl&gt;           &lt;dbl&gt;</span>
+<span class="co">#&gt; 1 click       0.72      0.75 3.16e- 1     0.0417        -0.0248           0.108</span>
+<span class="co">#&gt; 2 purchase    0.4       0.2  8.39e-12    -0.5           -0.621           -0.379</span></pre></body></html></div>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <div id="tocnav">
-      <h2 class="hasAnchor">
-<a href="#tocnav" class="anchor"></a>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-<li><a href="#after_join-types">after_join types</a></li>
-      <li><a href="#max-gap">Max gap</a></li>
-      <li><a href="#other-types-of-joins">Other types of joins</a></li>
-      <li><a href="#summarize-prop-tests">Summarize Prop Tests</a></li>
-      </ul>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
 </div>
-      </div>
 
 </div>
 
@@ -326,7 +324,7 @@ tbl <span class="op">%&gt;%</span>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
