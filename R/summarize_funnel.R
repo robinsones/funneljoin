@@ -2,23 +2,25 @@
 #'
 #' @param x a data.frame with columns nb_conversions and nb_users
 #' @param alternative_name the name of the column indicating the experiment group
+#' @param base_level the name of the control experiment group
 #' @param ... any additional arguments
 #' @param ungroup whether the table needs to be ungrouped
 #'
 #' @return a data.frame with proportion test results
 #' @export
-summarize_prop_tests <- function(x, alternative_name = alternative.name, ..., ungroup = TRUE) {
+summarize_prop_tests <- function(x, alternative_name = alternative.name, base_level = "control",
+                                 ..., ungroup = TRUE) {
   if (nrow(x) > 2 && is.null(dplyr::groups(x))) {
     stop("Need to group_by (probably by alternative_name column)")
   }
   if (inherits(x, "tbl_lazy")) {
     stop("Needs to be a local (not remote) table")
   }
-
   var_enq_alternative <- dplyr::enquo(alternative_name)
 
   prepared <- x %>%
     dplyr::filter(dplyr::n() == 2) %>%
+    mutate(!!var_enq_alternative := fct_relevel(!!var_enq_alternative, base_level)) %>%
     dplyr::arrange(!!var_enq_alternative)
 
   alternatives <- sort(unique(dplyr::pull(prepared, !!var_enq_alternative)))
