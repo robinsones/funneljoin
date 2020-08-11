@@ -16,7 +16,7 @@ quickly with funneljoin’s `after_join()` or `funnel_start()` and
 tables, **but has only been tried on postgres**.
 
 For more examples of how to use funneljoin, check out [the
-vignette](https://robinsones.github.io/funneljoin/articles/funneljoin.html),
+vignette](https://cran.r-project.org/web/packages/funneljoin/vignettes/funneljoin.html),
 which shows different types of joins and the optional arguments, or this
 [blog
 post](https://hookedondata.org/introducing-the-funneljoin-package/),
