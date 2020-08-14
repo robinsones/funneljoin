@@ -33,5 +33,6 @@ Imports:
     purrr,
     rlang,
     tidyr,
-    methods
+    methods,
+    forcats
 VignetteBuilder: knitr

@@ -20,7 +20,7 @@ summarize_prop_tests <- function(x, alternative_name = alternative.name, base_le
 
   prepared <- x %>%
     dplyr::filter(dplyr::n() == 2) %>%
-    mutate(!!var_enq_alternative := fct_relevel(!!var_enq_alternative, base_level)) %>%
+    mutate(!!var_enq_alternative := forcats::fct_relevel(!!var_enq_alternative, base_level)) %>%
     dplyr::arrange(!!var_enq_alternative)
 
   alternatives <- sort(unique(dplyr::pull(prepared, !!var_enq_alternative)))
