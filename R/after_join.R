@@ -190,7 +190,7 @@ after_join <- function(x,
     # user, so we need to pick the first of them
     pairs <- pairs %>%
       distinct_events(time_col = time_xy$x,
-                      user_col = "user_id",
+                      user_col = user_xy$x,
                       type = "first")
   }
 
