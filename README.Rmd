@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 
 The goal of funneljoin is to make it easy to analyze behavior funnels. For example, maybe you're interested in finding the people who visit a page and then register. Or you want all the times people click on an item and add it to their cart within 2 days. These can all be answered quickly with funneljoin's `after_join()` or `funnel_start()` and `funnel_step()`. As funneljoin uses dplyr, it can also work with remote tables, **but has only been tried on postgres**. 
 
-For more examples of how to use funneljoin, check out [the vignette](https://cran.r-project.org/web/packages/funneljoin/vignettes/funneljoin.html), which shows different types of joins and the optional arguments, or this [blog post](https://hookedondata.org/introducing-the-funneljoin-package/), which showcases how to use funneljoin analyze questions and answers on StackOverflow. 
+For more examples of how to use funneljoin, check out [the vignette](https://CRAN.R-project.org/package=funneljoin/vignettes/funneljoin.html), which shows different types of joins and the optional arguments, or this [blog post](https://hookedondata.org/introducing-the-funneljoin-package/), which showcases how to use funneljoin analyze questions and answers on StackOverflow. 
 
 ## Installation
 
