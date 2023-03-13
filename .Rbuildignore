@@ -11,3 +11,4 @@
 ^CRAN-RELEASE$
 ^_pkgdown\.yml$
 ^pkgdown$
+^data-raw$

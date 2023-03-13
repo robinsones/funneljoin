@@ -185,6 +185,15 @@ after_join <- function(x,
                       type = "last")
   }
 
+  if (type_x == "lastbefore" && type_y == "firstafter") {
+    # There might still be more than one x->y pair for each
+    # user, so we need to pick the first of them
+    pairs <- pairs %>%
+      distinct_events(time_col = time_xy$x,
+                      user_col = user_xy$x,
+                      type = "first")
+  }
+
   if (gap_col) {
     if (inherits(pairs, "tbl_lazy")) {
       time_difference <- dplyr::sql(glue::glue('DATEDIFF("seconds",
