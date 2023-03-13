@@ -22,12 +22,12 @@ LazyData: true
 Suggests:
     testthat,
     knitr,
-    rmarkdown
-RoxygenNote: 7.1.0
+    rmarkdown,
+    tibble
+RoxygenNote: 7.2.1
 Imports:
     dplyr,
     glue,
-    tibble,
     magrittr,
     broom,
     purrr,
