@@ -63,42 +63,6 @@ summarise.tbl_funnel <- function(.data, ...) {
 
 #' @rdname funnel-s3
 #' @export
-inner_join.tbl_funnel <- function(.data, ...) {
-  reclass(.data, NextMethod())
-}
-
-#' @rdname funnel-s3
-#' @export
-left_join.tbl_funnel <- function(.data, ...) {
-  reclass(.data, NextMethod())
-}
-
-#' @rdname funnel-s3
-#' @export
-right_join.tbl_funnel <- function(.data, ...) {
-  reclass(.data, NextMethod())
-}
-
-#' @rdname funnel-s3
-#' @export
-semi_join.tbl_funnel <- function(.data, ...) {
-  reclass(.data, NextMethod())
-}
-
-#' @rdname funnel-s3
-#' @export
-anti_join.tbl_funnel <- function(.data, ...) {
-  reclass(.data, NextMethod())
-}
-
-#' @rdname funnel-s3
-#' @export
-rename.tbl_funnel <- function(.data, ...) {
-  reclass(.data, NextMethod())
-}
-
-#' @rdname funnel-s3
-#' @export
 transmute.tbl_funnel <- function(.data, ...) {
   reclass(.data, NextMethod())
 }
