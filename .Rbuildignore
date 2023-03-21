@@ -12,3 +12,4 @@
 ^_pkgdown\.yml$
 ^pkgdown$
 ^data-raw$
+^revdep$
